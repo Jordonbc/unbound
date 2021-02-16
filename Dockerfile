@@ -1,4 +1,6 @@
-FROM alpine:3.13.0
+ARG ARCH=
+
+FROM ${ARCH}alpine:3.13.0
 
 RUN apk add --no-cache unbound
 
